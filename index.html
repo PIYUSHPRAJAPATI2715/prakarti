@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Prakarti Jangid | UI/UX Designer & Art Director</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,17 +32,39 @@
       <div class="cursor-label">VIEW</div>
     </div>
 
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+      <div class="mobile-nav-content">
+        <nav class="mobile-links">
+          <a href="#work" class="m-link">Selected Works</a>
+          <a href="#about" class="m-link">About & Craft</a>
+          <a href="#contact" class="m-link">Hire Prakarti</a>
+        </nav>
+        <div class="mobile-footer">
+          <p>© 2026 PJ. STUDIO</p>
+        </div>
+      </div>
+    </div>
+
     <div id="app">
       <header class="navbar">
         <div class="logo-container magnetic" data-strength="20">
           <span class="logo-pj">PJ.</span>
           <span class="logo-full">PRAKARTI JANGID</span>
         </div>
+        
+        <!-- Desktop Nav -->
         <nav class="nav-links">
           <a href="#work" class="nav-item magnetic" data-strength="10">Works</a>
           <a href="#about" class="nav-item magnetic" data-strength="10">About</a>
           <a href="#contact" class="nav-item pill magnetic" data-strength="15">Hire Me</a>
         </nav>
+
+        <!-- Mobile Toggle -->
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
       </header>
 
       <main>
@@ -84,7 +106,6 @@
           <div class="strip-item">UI/UX</div>
           <div class="strip-item">EDITING</div>
           <div class="strip-item">BRANDING</div>
-          <div class="strip-item">FIGMA</div>
         </div>
 
         <!-- Projects: Clean Glass Grid -->
