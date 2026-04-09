@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prakarti Jangid | UI/UX Designer & Art Director</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      /* Initial setup for a high-end clean look */
+      body { background-color: #fcfcfc; margin: 0; color: #1d1d1f; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+      #app { opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <!-- Modern Luxe Background System -->
+    <div class="background-wrapper">
+      <div class="aura-glow aura-1"></div>
+      <div class="aura-glow aura-2"></div>
+      <div class="grain-overlay"></div>
+    </div>
+    
+    <!-- Refined Image Trail (Snake Move) -->
+    <div id="image-trail-container"></div>
+    
+    <!-- Premium Magnetic Cursor -->
+    <div id="custom-cursor">
+      <div class="cursor-dot"></div>
+      <div class="cursor-ring"></div>
+      <div class="cursor-label">VIEW</div>
+    </div>
+
+    <div id="app">
+      <header class="navbar">
+        <div class="logo-container magnetic" data-strength="20">
+          <span class="logo-pj">PJ.</span>
+          <span class="logo-full">PRAKARTI JANGID</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#work" class="nav-item magnetic" data-strength="10">Works</a>
+          <a href="#about" class="nav-item magnetic" data-strength="10">About</a>
+          <a href="#contact" class="nav-item pill magnetic" data-strength="15">Hire Me</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero: The Masterpiece -->
+        <section id="hero" class="hero-section">
+          <div class="hero-content">
+            <h4 class="hero-eyebrow">DIGITAL ART DIRECTOR</h4>
+            <h1 class="hero-title reveal-text">Crafting Beautiful</h1>
+            <h1 class="hero-title secondary reveal-text delay-1">Experiences.</h1>
+            <p class="hero-descr reveal-text delay-2">
+              Merging minimalist aesthetics with high-performance UI/UX design. 
+              Based in India, working with visionaries worldwide.
+            </p>
+            <div class="hero-actions reveal-text delay-3">
+              <a href="#work" class="btn primary magnetic" data-strength="20">View Projects</a>
+              <a href="#contact" class="btn secondary magnetic" data-strength="20">Let's Talk</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual">
+            <div class="visual-container">
+              <img src="/hero_luxe.png" alt="Luxe Visual" class="floating-img">
+              <div class="visual-glass-card">
+                <span>UI/UX MASTERCLASS</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="scroll-prompt">
+            <div class="mouse-scroll"></div>
+            <span>SCROLL TO EXPLORE</span>
+          </div>
+        </section>
+
+        <!-- Social Proof / Skills Bar -->
+        <div class="skills-strip">
+          <div class="strip-item">FIGMA</div>
+          <div class="strip-item">CANVA</div>
+          <div class="strip-item">UI/UX</div>
+          <div class="strip-item">EDITING</div>
+          <div class="strip-item">BRANDING</div>
+          <div class="strip-item">FIGMA</div>
+        </div>
+
+        <!-- Projects: Clean Glass Grid -->
+        <section id="work" class="work-section">
+          <div class="section-header">
+            <h2 class="section-title">Selected Works</h2>
+            <p>A curated collection of digital products and visual stories.</p>
+          </div>
+          <div class="glass-grid" id="main-grid">
+            <!-- Projects injected by JS -->
+          </div>
+        </section>
+
+        <!-- About: Human Centric -->
+        <section id="about" class="about-section">
+          <div class="about-card glass">
+            <div class="about-title-group">
+              <span class="eyebrow">THE PHILOSOPHY</span>
+              <h2 class="about-title">Design is not just how it looks. It's how it works.</h2>
+            </div>
+            <div class="about-content">
+              <p>I believe in the power of simplicity. Every pixel has a purpose, every animation has a reason. I help brands communicate through clean, intuitive interfaces.</p>
+              <div class="about-features">
+                <div class="feature">
+                  <h3>STRATEGY</h3>
+                  <p>Deep-diving into user needs.</p>
+                </div>
+                <div class="feature">
+                  <h3>DESIGN</h3>
+                  <p>High-fidelity visual systems.</p>
+                </div>
+                <div class="feature">
+                  <h3>MOTION</h3>
+                  <p>Fluid, responsive animations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact: Clean Finish -->
+        <section id="contact" class="contact-section">
+          <div class="contact-wrap">
+            <h2 class="contact-title">Have a project in mind?</h2>
+            <p>Let's collaborate and build something spectacular together.</p>
+            <div class="contact-buttons">
+              <a href="mailto:hello@prakartijangid.design" class="magnetic big-pill-btn" data-strength="30">
+                START A PROJECT
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p>&copy; 2026 Prakarti Jangid STUDIO</p>
+          <div class="footer-links">
+            <a href="#" class="magnetic" data-strength="10">Dribbble</a>
+            <a href="#" class="magnetic" data-strength="10">Behance</a>
+            <a href="#" class="magnetic" data-strength="10">Instagram</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
