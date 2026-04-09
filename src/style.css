@@ -192,7 +192,7 @@ body {
 /* PERFECTION MEDIA QUERIES */
 
 @media (max-width: 1024px) {
-  --p: 5vw;
+  :root { --p: 5vw; }
   .hero-section { flex-direction: column; padding-top: 15vh; text-align: center; }
   .hero-content { max-width: 100%; order: 1; }
   .hero-descr { margin: 2rem auto 0; font-size: 1.1rem; }
