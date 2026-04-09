@@ -447,12 +447,40 @@ body {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .hero-section { flex-direction: column; padding-top: 15vh; }
-  .hero-content { max-width: 100%; text-align: center; }
-  .hero-descr { margin: 2rem auto 0; }
+  --p: 5vw;
+  .hero-section { flex-direction: column; padding-top: 15vh; text-align: center; }
+  .hero-content { max-width: 100%; order: 1; }
+  .hero-descr { margin: 2rem auto 0; font-size: 1rem; }
   .hero-actions { justify-content: center; }
-  .hero-visual { position: relative; margin-top: 5vh; width: 100%; right: 0; }
+  .hero-visual { position: relative; margin-top: 8vh; width: 100%; right: 0; order: 2; }
   .glass-grid { grid-template-columns: 1fr; }
-  .about-content { grid-template-columns: 1fr; }
-  .about-card { padding: 3rem; }
+  .about-content { grid-template-columns: 1fr; gap: 2rem; }
+  .about-card.glass { padding: 3rem 2rem; gap: 3rem; }
+  .about-title { font-size: 2.5rem; }
+  .about-content p { font-size: 1.2rem; }
+  .about-features { grid-template-columns: 1fr; gap: 1.5rem; text-align: left; }
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 1.5rem var(--p); }
+  .logo-pj { font-size: 1.2rem; }
+  .logo-full { display: none; }
+  .nav-links { gap: 1rem; }
+  .nav-item:not(.pill) { font-size: 0.75rem; }
+  .hero-title { font-size: 3.5rem; letter-spacing: -2px; }
+  .hero-eyebrow { font-size: 0.7rem; letter-spacing: 2px; }
+  .section-title { font-size: 2.5rem; }
+  .contact-title { font-size: 3rem; }
+  .big-pill-btn { width: 100%; padding: 1.5rem 2rem; }
+  .glass-card { padding: 1.5rem; }
+  .card-img-wrap { height: 280px; }
+  .trail-image { width: 120px; height: 90px; } /* Smaller trail image on mobile */
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2.8rem; }
+  .hero-actions { flex-direction: column; width: 100%; }
+  .btn { width: 100%; text-align: center; }
+  .hero-visual { margin-top: 5vh; }
+  .visual-glass-card { left: 0; bottom: -20px; width: 100%; text-align: center; }
 }
