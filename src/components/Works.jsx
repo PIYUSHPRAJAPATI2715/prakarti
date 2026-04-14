@@ -46,7 +46,7 @@ export default function Works({ onViewStudy }) {
                 onClick={() => onViewStudy('openstatus')} 
                 className="bento-btn"
               >
-                View Case Study
+                View casestudy
               </button>
             </div>
             <div className="bento-visual green">
@@ -63,7 +63,7 @@ export default function Works({ onViewStudy }) {
               <p className="bento-desc">
                 Improving Search Experience for Better Product Discovery
               </p>
-              <a href="#" className="bento-btn">View Case Study</a>
+              <a href="#" className="bento-btn">View casestudy</a>
             </div>
             <div className="bento-visual red">
               <img src="/project2.png" alt="SOLD AI App" className="mockup-img" />
