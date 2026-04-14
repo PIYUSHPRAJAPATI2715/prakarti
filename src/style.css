@@ -138,6 +138,35 @@ body {
   line-height: 1.5;
   font-weight: 500;
   max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Sunlight Effect */
+.hero-light {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 170, 0, 0.4) 0%,
+    rgba(255, 120, 0, 0.15) 30%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(80px);
+  mix-blend-mode: overlay;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  will-change: transform, opacity;
+}
+
+.hero-section:hover .hero-light {
+  opacity: 0.8;
 }
 
 
