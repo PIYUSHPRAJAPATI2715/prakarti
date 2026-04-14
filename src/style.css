@@ -147,26 +147,28 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 900px;
-  height: 900px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 170, 0, 0.4) 0%,
-    rgba(255, 120, 0, 0.15) 30%,
-    transparent 70%
-  );
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle,
+      rgba(244, 199, 115, 0.774) 70%,
+      rgba(244, 198, 115, 0.2) 30%,
+      transparent 10%);
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
-  filter: blur(80px);
-  mix-blend-mode: overlay;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  will-change: transform, opacity;
+  filter: blur(200px);
+  /* Slightly less than layer blur to avoid complete vanishing */
+  opacity: 1;
+  will-change: transform;
 }
 
-.hero-section:hover .hero-light {
-  opacity: 0.8;
+/* Restore hero background image */
+.hero-section {
+  min-height: 90vh;
+  background: url('/herobg.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 
@@ -834,7 +836,7 @@ body {
   .nav-btn {
     padding: 0.5rem;
   }
-  
+
   /* Optionally hide text to save space on very small devices */
   /* .nav-btn span { display: none; } */
 }

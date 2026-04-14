@@ -18,16 +18,20 @@ export default function Hero() {
     })
 
     // Sunlight tracking logic
-    gsap.set(lightRef.current, { xPercent: -50, yPercent: -50 })
-    const xTo = gsap.quickTo(lightRef.current, "x", { duration: 0.8, ease: "power3" })
-    const yTo = gsap.quickTo(lightRef.current, "y", { duration: 0.8, ease: "power3" })
+    gsap.set(lightRef.current, { 
+      xPercent: -50, 
+      yPercent: -50,
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2
+    })
+    
+    const xTo = gsap.quickTo(lightRef.current, "x", { duration: 1.2, ease: "slow" })
+    const yTo = gsap.quickTo(lightRef.current, "y", { duration: 1.2, ease: "slow" })
 
     const handleMouseMove = (e) => {
       const rect = heroRef.current.getBoundingClientRect()
-      const x = e.clientX - rect.left
-      const y = e.clientY - rect.top
-      xTo(x)
-      yTo(y)
+      xTo(e.clientX - rect.left)
+      yTo(e.clientY - rect.top)
     }
 
     const heroSection = heroRef.current
