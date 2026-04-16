@@ -3,6 +3,8 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Works from './components/Works'
 import About from './components/About'
+import Moodboard from './components/Moodboard'
+import Archive from './components/Archive'
 import Contact from './components/Contact'
 import CaseStudyOpenStatus from './components/CaseStudyOpenStatus'
 import Cursor from './components/Cursor'
@@ -55,6 +57,8 @@ export default function App() {
               <Hero />
               <Works onViewStudy={(v) => setView(v)} />
               <About />
+              <Moodboard />
+              <Archive />
               <Contact />
             </main>
           </>

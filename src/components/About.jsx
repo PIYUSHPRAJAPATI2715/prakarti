@@ -24,11 +24,6 @@ export default function About() {
       <div className="about-wrap" ref={aboutRef}>
         <div className="about-header about-reveal">
           <h2 className="about-title">About Me</h2>
-          {/* Exact doodle from screenshot */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '1.5rem', color: '#888' }}>⤷</span>
-            <span className="about-doodle">🕌 Pink City</span>
-          </div>
         </div>
         
         <div className="about-text">
@@ -42,7 +37,8 @@ export default function About() {
             I like going deep into problems, iterating fast, and using AI tools to explore better solutions—without losing sight of the user.
           </p>
         </div>
-      </div>
+
+        </div>
     </section>
   )
 }

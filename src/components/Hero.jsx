@@ -9,15 +9,25 @@ export default function Hero() {
   useGSAP(() => {
     const tl = gsap.timeline({ delay: 0.5 })
     
-    tl.from('.hero-anim', {
-      y: 100,
-      opacity: 0,
-      stagger: 0.1,
-      duration: 1.5,
-      ease: 'expo.out'
+    tl.from('.hero-line-inner', {
+      y: '100%',
+      stagger: 0.15,
+      duration: 1.2,
+      ease: 'power3.out'
     })
+    .from('.hero-profile-wrap', {
+      scale: 0.8,
+      opacity: 0,
+      duration: 1,
+      ease: 'back.out(1.7)'
+    }, '-=0.8')
+    .from('.hero-descr-inner', {
+      y: 20,
+      opacity: 0,
+      duration: 0.8
+    }, '-=0.5')
 
-    // Sunlight tracking logic
+    // Sunlight tracking with multi-layered effect
     gsap.set(lightRef.current, { 
       xPercent: -50, 
       yPercent: -50,
@@ -25,8 +35,8 @@ export default function Hero() {
       y: window.innerHeight / 2
     })
     
-    const xTo = gsap.quickTo(lightRef.current, "x", { duration: 1.2, ease: "slow" })
-    const yTo = gsap.quickTo(lightRef.current, "y", { duration: 1.2, ease: "slow" })
+    const xTo = gsap.quickTo(lightRef.current, "x", { duration: 1.5, ease: "power2.out" })
+    const yTo = gsap.quickTo(lightRef.current, "y", { duration: 1.5, ease: "power2.out" })
 
     const handleMouseMove = (e) => {
       const rect = heroRef.current.getBoundingClientRect()
@@ -44,18 +54,22 @@ export default function Hero() {
     <section id="home" className="hero-section" ref={heroRef}>
       <div className="hero-light" ref={lightRef}></div>
       
-      <div className="hero-profile hero-anim" style={{ position: 'relative', zIndex: 2 }}>
-        <img src="/p.png" alt="Prakrati" />
+      <div className="hero-profile-wrap" style={{ position: 'relative', zIndex: 2 }}>
+        <div className="hero-profile">
+          <img src="/p.png" alt="Prakrati" />
+        </div>
       </div>
       
       <h1 className="hero-title" style={{ position: 'relative', zIndex: 2 }}>
-        <div className="hero-anim">Hi, I'm Prakrati</div>
-        <div className="hero-anim">UX UI Designer</div>
+        <div className="hero-line"><span className="hero-line-inner">Hi, I'm Prakrati</span></div>
+        <div className="hero-line"><span className="hero-line-inner">UX UI Designer</span></div>
       </h1>
       
-      <p className="hero-descr hero-anim" style={{ margin: '0 auto', position: 'relative', zIndex: 2 }}>
-        Turning complex problems into intuitive,<br />user-centered experiences
-      </p>
+      <div className="hero-descr" style={{ margin: '0 auto', position: 'relative', zIndex: 2 }}>
+        <div className="hero-descr-inner">
+          Turning complex problems into intuitive,<br />user-centered experiences
+        </div>
+      </div>
     </section>
   )
 }

@@ -42,15 +42,15 @@ export default function Works({ onViewStudy }) {
               <p className="bento-desc">
                 Transforming a Complex Onboarding Flow into a Seamless Journey.
               </p>
-              <button 
-                onClick={() => onViewStudy('openstatus')} 
+              <button
+                onClick={() => onViewStudy('openstatus')}
                 className="bento-btn"
               >
                 View casestudy
               </button>
             </div>
             <div className="bento-visual green">
-              <img src="/project1.png" alt="" className="mockup-img" />
+              <img src="/project2.png" alt="" className="mockup-img" />
             </div>
           </div>
 
@@ -66,7 +66,7 @@ export default function Works({ onViewStudy }) {
               <a href="#" className="bento-btn">View casestudy</a>
             </div>
             <div className="bento-visual red">
-              <img src="/project2.png" alt="SOLD AI App" className="mockup-img" />
+              <img src="/project1.png" alt="SOLD AI App" className="mockup-img" />
             </div>
           </div>
 
