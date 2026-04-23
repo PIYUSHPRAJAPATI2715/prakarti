@@ -20,7 +20,7 @@ export default function Header({ onNavigate }) {
         <a href="#work" className="nav-btn">
           <Briefcase /> Work
         </a>
-        <a href="#resume" className="nav-btn">
+        <a href="https://drive.google.com/file/d/1nzfBXknQEaubJlKX5N23XC6awsngX44g/view" target="_blank" rel="noopener noreferrer" className="nav-btn">
           <FileText /> Resume
         </a>
       </div>
