@@ -7,6 +7,7 @@ import Moodboard from './components/Moodboard'
 import Archive from './components/Archive'
 import Contact from './components/Contact'
 import CaseStudyOpenStatus from './components/CaseStudyOpenStatus'
+import CaseStudySoldAI from './components/CaseStudySoldAI'
 import Cursor from './components/Cursor'
 import Preloader from './components/Preloader'
 import Lenis from 'lenis'
@@ -62,8 +63,10 @@ export default function App() {
               <Contact />
             </main>
           </>
-        ) : (
+        ) : view === 'openstatus' ? (
           <CaseStudyOpenStatus onBack={() => setView('home')} />
+        ) : (
+          <CaseStudySoldAI onBack={() => setView('home')} />
         )}
       </div>
     </>

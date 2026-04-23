@@ -36,7 +36,7 @@ export default function Works({ onViewStudy }) {
           <div className="bento-card">
             <div className="bento-info">
               <div className="bento-logo openstatus">
-                <img src="/open.png" alt="" style={{ height: '50px' }} />
+                <img src="/open.png" alt="" style={{ height: '90px' }} />
 
               </div>
               <p className="bento-desc">
@@ -44,9 +44,9 @@ export default function Works({ onViewStudy }) {
               </p>
               <button
                 onClick={() => onViewStudy('openstatus')}
-                className="bento-btn"
+                className="bento-btn-img"
               >
-                View casestudy
+                <img src="/button1.png" alt="View casestudy" />
               </button>
             </div>
             <div className="bento-visual green">
@@ -58,12 +58,17 @@ export default function Works({ onViewStudy }) {
           <div className="bento-card">
             <div className="bento-info">
               <div className="bento-logo soldai">
-                <img src="/sold.png" alt="SOLD AI logo" style={{ height: '50px' }} />
+                <img src="/sold.png" alt="SOLD AI logo" style={{ height: '70px' }} />
               </div>
               <p className="bento-desc">
                 Improving Search Experience for Better Product Discovery
               </p>
-              <a href="#" className="bento-btn">View casestudy</a>
+              <button
+                onClick={() => onViewStudy('soldai')}
+                className="bento-btn-img"
+              >
+                <img src="/button1.png" alt="View casestudy" />
+              </button>
             </div>
             <div className="bento-visual red">
               <img src="/project1.png" alt="SOLD AI App" className="mockup-img" />

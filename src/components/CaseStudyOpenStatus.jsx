@@ -49,16 +49,18 @@ export default function CaseStudyOpenStatus({ onBack }) {
             <span></span>
           </div>
           <h1 className="cs-title">Transforming a Complex Onboarding Flow into a Seamless Journey</h1>
-          <div className="cs-meta">
-            <div className="cs-meta-item">
+          <p className="cs-author">— PRAKRATI JANGID</p>
+          
+          <div className="cs-meta-cards">
+            <div className="cs-meta-card">
               <h3>My Role</h3>
               <p>UX UI Design, User Research Prototyping, Usability Testing</p>
             </div>
-            <div className="cs-meta-item">
+            <div className="cs-meta-card">
               <h3>Team</h3>
               <p>2 UX UI Designers, 1 Project Manager and 3 App Developers</p>
             </div>
-            <div className="cs-meta-item">
+            <div className="cs-meta-card">
               <h3>Project Timeline</h3>
               <p>Sep 2025 - Nov 2025</p>
             </div>

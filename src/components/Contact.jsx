@@ -27,31 +27,28 @@ export default function Contact() {
 
   return (
     <footer className="contact-section" ref={container} id="contact">
-      <div className="contact-wrap">
-        <h2 className="contact-title contact-reveal">Let's build<br />something great.</h2>
-        
-        <div className="contact-links contact-reveal">
-          <a href="mailto:hello@prakrati.com" className="contact-link">
-            <div className="link-circle"><Mail /></div>
-            <span>Email</span>
-            <ArrowUpRight className="arrow" />
-          </a>
-          <a href="https://linkedin.com/in/prakrati" target="_blank" rel="noreferrer" className="contact-link">
-            <div className="link-circle"><Linkedin /></div>
-            <span>LinkedIn</span>
-            <ArrowUpRight className="arrow" />
-          </a>
-          <a href="https://instagram.com/prakrati" target="_blank" rel="noreferrer" className="contact-link">
-            <div className="link-circle"><Instagram /></div>
-            <span>Instagram</span>
-            <ArrowUpRight className="arrow" />
-          </a>
+      <div className="contact-card">
+        <div className="contact-content-wrap">
+          <p className="contact-sub contact-reveal">Need a Hands-On Design?</p>
+          <h2 className="contact-title contact-reveal">Let's Talk</h2>
+          <p className="contact-desc contact-reveal">
+            From translating your ideas into clear design direction to delivering refined and thoughtful experiences, let's create something meaningful, functional, memorable, and built to solve real user problems
+          </p>
+          
+          <div className="contact-btns contact-reveal">
+            <a href="mailto:prakratijangid052@gmail.com" className="contact-img-link">
+              <img src="/bt3.png" alt="Email" className="contact-btn-image" />
+            </a>
+            <a href="https://www.linkedin.com/in/contactprakratijangid/" target="_blank" rel="noreferrer" className="contact-img-link">
+              <img src="/bt4.png" alt="LinkedIn" className="contact-btn-image" />
+            </a>
+          </div>
         </div>
+      </div>
 
-        <div className="footer-bottom">
-          <p>© 2024 Prakrati Jangid. All rights reserved.</p>
-          <p>Handcrafted with love from Jaipur.</p>
-        </div>
+      <div className="footer-bottom">
+        <p>© 2024 Prakrati Jangid. All rights reserved.</p>
+        <p>Handcrafted with love from Jaipur.</p>
       </div>
     </footer>
   )
