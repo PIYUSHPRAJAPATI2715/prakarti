@@ -939,13 +939,17 @@ body {
 }
 
 .cs-content {
-  padding: 10vh var(--p);
-  max-width: 1200px;
+  padding: 8vh var(--p);
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 .cs-header {
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cs-brand {
@@ -955,6 +959,7 @@ body {
   margin-bottom: 2rem;
   font-weight: 700;
   color: #1a1a1a;
+  justify-content: center;
 }
 
 .cs-brand img {
@@ -1020,8 +1025,20 @@ body {
   font-weight: 500;
 }
 
+.cs-img-banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: auto;
+  margin-bottom: 8rem;
+  display: block;
+}
+
 .cs-section {
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   width: 100%;
 }
 
@@ -1086,22 +1103,27 @@ body {
 }
 
 .cs-sticky-note {
-  background: #fdfd96; /* Light yellow */
-  padding: 2.5rem 2rem;
-  width: 280px;
-  min-height: 200px;
+  background: #FFF9C4; /* More vibrant cream yellow */
+  padding: 3rem 2rem;
+  width: 320px;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.08);
-  transform: rotate(-1deg);
-  border-radius: 2px;
+  box-shadow: 20px 30px 60px rgba(0, 0, 0, 0.05);
+  transform: rotate(-1.5deg);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.cs-sticky-note:hover {
+  transform: rotate(0deg) scale(1.05);
 }
 
 .cs-sticky-note.yellow {
-  background: #fefeaa;
-  transform: rotate(1deg);
+  background: #FFF59D;
+  transform: rotate(1.5deg);
 }
 
 .cs-sticky-note p {

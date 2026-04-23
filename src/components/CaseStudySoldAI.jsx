@@ -45,11 +45,11 @@ export default function CaseStudySoldAI({ onBack }) {
         <div className="cs-header">
           <div className="cs-brand soldai">
             <img src="/sold.png" alt="" style={{ height: '70px' }} />
-            <span>SOLD AI</span>
+
           </div>
           <h1 className="cs-title">Improving Search Experience for Better Product Discovery</h1>
           <p className="cs-author">— PRAKRATI JANGID</p>
-          
+
           <div className="cs-meta-cards">
             <div className="cs-meta-card">
               <h3>My Role</h3>
@@ -68,13 +68,13 @@ export default function CaseStudySoldAI({ onBack }) {
 
         {/* Section 1: Overview */}
         <section className="cs-section">
-          <div className="cs-text-content">
+          <div className="cs-text-content" style={{ margin: '0 auto 4rem auto', textAlign: 'center' }}>
             <h2 className="cs-sec-title">Let's start with the project overview</h2>
             <p className="cs-sec-desc">
               SOLD AI is an AI-powered marketplace assistant that helps users instantly create product listings by analyzing images, generating descriptions, and suggesting optimal pricing.
             </p>
           </div>
-          <img src="/sold1.png" alt="SOLD AI Overview" className="cs-img-full" />
+          <img src="/sold1.png" alt="SOLD AI Overview" className="cs-img-banner" />
         </section>
 
         {/* Section 2: The Challenge */}
@@ -109,7 +109,7 @@ export default function CaseStudySoldAI({ onBack }) {
               <li>Users rely on quick mental shortcuts (price, category, condition) to make decisions faster.</li>
             </ul>
           </div>
-          
+
           <div className="cs-sticky-notes">
             <div className="cs-sticky-note">
               <p>How might we make search feel more responsive and guided?</p>
@@ -121,7 +121,7 @@ export default function CaseStudySoldAI({ onBack }) {
               <p>How might we design for faster scanning and decision-making?</p>
             </div>
           </div>
-          
+
           <img src="/sold3.png" alt="Research And Analysis" className="cs-img-full" />
         </section>
 
@@ -159,13 +159,13 @@ export default function CaseStudySoldAI({ onBack }) {
             <p className="cs-sec-desc">
               The objective was to understand how quickly users could discover relevant products, how easily they could apply filters, and how efficiently they could complete their search journey with minimal effort.
             </p>
-            
-            <h2 className="cs-sec-title" style={{marginTop: '4rem'}}>Impact & Final Outcome</h2>
+
+            <h2 className="cs-sec-title" style={{ marginTop: '4rem' }}>Impact & Final Outcome</h2>
             <p className="cs-sec-desc">
               After addressing key usability issues in the search and filtering experience, the interaction became more intuitive and streamlined. By reducing clutter and improving structure, users were able to find relevant products faster, apply filters with ease, and complete their search journey with significantly less effort.
             </p>
           </div>
-          <img src="/sold6.png" alt="Impact & Final Outcome" className="cs-img-full" />
+          <img src="/sold6.png" alt="Impact & Final Outcome" className="cs-img-banner" />
         </section>
 
         <div className="cs-footer">
