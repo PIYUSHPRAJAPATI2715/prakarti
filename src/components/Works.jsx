@@ -13,7 +13,7 @@ export default function Works({ onViewStudy }) {
       scrollTrigger: {
         trigger: '.bento-grid',
         start: 'top 15%',
-        end: '+=100%', // Scroll distance for the animation
+        end: '+=20%', // Further reduced to eliminate perceived space
         pin: true,
         scrub: 1,
       }

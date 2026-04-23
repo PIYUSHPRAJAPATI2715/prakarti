@@ -150,14 +150,16 @@ export default function CaseStudyOpenStatus({ onBack }) {
               After addressing the usability issues we faced earlier, the onboarding process became more streamlined, reducing unnecessary inputs and improving clarity. Users were able to complete the onboarding flow faster and with fewer questions.
             </p>
           </div>
+        </section>
 
-          {/* Final Quote/Impact Box */}
-          <div className="cs-impact-box" style={{ marginTop: '6rem' }}>
+        {/* Final Impact Box */}
+        <div className="cs-impact-full-width">
+          <div className="cs-impact-box">
             <p>
               This project helped me understand how to think from the user's perspective—focusing on what information is truly necessary during the interaction with the product. Most importantly, it reinforced how thoughtful design decisions, can make the user journey more intuitive.
             </p>
           </div>
-        </section>
+        </div>
 
         <div className="cs-footer">
           <button onClick={onBack} className="cs-btn-primary">Back to Home</button>
