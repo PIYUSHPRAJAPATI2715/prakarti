@@ -7,20 +7,36 @@ export default function Works({ onViewStudy }) {
 
   useGSAP(() => {
     const cards = gsap.utils.toArray('.bento-card')
-    cards.forEach((card, i) => {
-      gsap.from(card, {
-        scrollTrigger: {
-          trigger: card,
-          start: 'top 90%',
-          toggleActions: 'play none none none'
-        },
-        y: 100,
-        opacity: 0,
-        duration: 1.2,
-        ease: 'expo.out',
-        delay: i * 0.1
-      })
+    
+    // Pin the grid and animate overlap
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.bento-grid',
+        start: 'top 15%',
+        end: '+=100%', // Scroll distance for the animation
+        pin: true,
+        scrub: 1,
+      }
     })
+
+    // Animate second card overlapping the first
+    if (cards.length > 1) {
+      tl.to(cards[0], {
+        scale: 0.95,
+        opacity: 0.7,
+        filter: 'blur(4px)',
+        duration: 1,
+      }, 0)
+
+      tl.fromTo(cards[1], {
+        y: '50px', // Start slightly below
+      }, {
+        y: '-664px', // Move up to cover first card (Card height 600px + gap 64px)
+        duration: 1,
+        ease: 'none'
+      }, 0)
+    }
+
   }, { scope: container })
 
   return (
@@ -33,7 +49,7 @@ export default function Works({ onViewStudy }) {
 
         <div className="bento-grid">
           {/* Card 1: OpenStatus */}
-          <div className="bento-card">
+          <div className="bento-card" style={{ zIndex: 1 }}>
             <div className="bento-info">
               <div className="bento-logo openstatus">
                 <img src="/open.png" alt="" style={{ height: '90px' }} />
@@ -55,7 +71,7 @@ export default function Works({ onViewStudy }) {
           </div>
 
           {/* Card 2: SOLD AI */}
-          <div className="bento-card">
+          <div className="bento-card" style={{ zIndex: 2 }}>
             <div className="bento-info">
               <div className="bento-logo soldai">
                 <img src="/sold.png" alt="SOLD AI logo" style={{ height: '70px' }} />
